@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e3eef1e8;
+}
+.header {
+  background-color: brown;
+  border-bottom: rgb(12, 153, 172) 3px solid;
+  margin: 0;
+}
+.div-header {
+  margin: 0 auto;
+  text-align: center;
+}
+svg {
+  width: 65px;
+  height: 65px;
+}
+.title {
+  color: rgb(102, 3, 3);
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px 0;
+  border: white solid 4px;
+  border-radius: 5px;
+  width: 700px;
+  stroke: rgb(73, 20, 220);
+  stroke-width: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.div-button {
+  border: #1c4616 solid;
+  width: 350px;
+}
+.div-moves {
+  border: #1c4616 solid;
+  stroke-width: 5px;
+  width: 200px;
+}
+.map {
+  width: 350px;
+  padding: 0px;
+}
+.button {
+  margin: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: rgb(255, 109, 4);
+}
+.button:hover {
+  stroke: rgb(26, 25, 25);
+  fill: rgb(22, 21, 21);
+  cursor: pointer;
+}
+.button:active {
+  transform: translateY(1px);
+  background-color: rgb(10, 140, 192);
+  border-color: rgb(0, 0, 0);
+}
+
+.maincontent {
+  display: inline-block;
+  margin: 0 5%;
+}
+.box {
+  float: left;
+  margin: 7px 20px;
+  height: 330px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: rgb(6, 1, 46) solid;
+  box-shadow: rgb(114, 160, 160) 7px 7px 5px;
+}
+.button3 {
+  text-align: center;
+  border-radius: 50%;
+  border: rgb(5, 1, 1) solid 4px;
+  background-color: #ff0000;
+  stroke: seashell;
+}
+
+ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 40px 20px;
+}
+ul li {
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(59, 143, 252);
+  border: black solid 2px;
+  border-radius: 3px;
+  margin: 5px 20px;
+  float: left;
+}
+
+.footer {
+  background-color: rgba(20, 18, 18, 0.911);
+  border-top: rgb(5, 130, 146) 2px solid;
+  margin: 33px auto 0 auto;
+  text-align: center;
+
+  padding: 7px 0;
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+.data_form{
+
+  float: left;
+  margin: 20% 3%;
+  text-align: left;
+  
+}
+.input_div{
+  margin:10px 20%;
+  
+}
+label{
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  padding: 5px 5px 5px 10px;
+  background-color: #0a8494;
+  border: rgb(1, 8, 8) solid 1px;
+  border-radius: 5px;
+}
+.clean {
+  color: white;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  padding: 5px;
+  background-color: #09e252;
+  border: rgb(1, 8, 8) solid 1px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1260px) {
+  .title {
+    margin: 20px 15%;
+    width: 70%;
+  }
+
+  .box {
+    width: 400px;
+    margin: 20px 18%;
+  }
+  .cleanform {
+    width: 15%;
+    margin: 20px 43%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    margin: 20px 15%;
+    width: 70%;
+  }
+
+  .box {
+    width: 350px;
+    margin: 20px auto;
+  }
+  .cleanform {
+    width: 15%;
+    margin: 20px 35%;
+  }
+  .div-moves {
+    border: #081435 solid;
+    height: 500px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    margin: 20px 8%;
+    width: 80%;
+  }
+
+  .box {
+    width: 300px;
+    margin: 20px auto;
+    margin-left: -10%;
+  }
+
+  .button {
+    margin: 5px;
+    margin-top: 25px;
+  }
+}
