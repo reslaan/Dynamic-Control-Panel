@@ -1,5 +1,5 @@
 <?php
-include('db/connect.php');
+include('connect.php');
 
 ?>
 
@@ -7,7 +7,7 @@ include('db/connect.php');
 
 function save()
 {
-    include('db/connect.php');
+    include('connect.php');
     $forword = $_POST['forword'];
     $left = $_POST['left'];
     $right = $_POST['right'];
@@ -32,7 +32,7 @@ function save()
 
 function rows()
 {
-    include('db/connect.php');
+    include('connect.php');
     $sql = "SELECT  * FROM dynamic_control  ";
     $result = mysqli_query($connect, $sql);
     mysqli_close($connect);
@@ -105,7 +105,7 @@ function rows()
             <ul>
 
                 <?php
-                include('db/connect.php');
+                include('connect.php');
                 $sql = "SELECT  forword , L , R , backword FROM dynamic_control ORDER BY id DESC LIMIT 1";
                 $result = mysqli_query($connect, $sql);
                 mysqli_close($connect);
@@ -121,7 +121,7 @@ function rows()
                     }
                 }
                 if (isset($_POST['clean'])) {
-                    include('db/connect.php');
+                    include('connect.php');
                     $sql = "DELETE FROM dynamic_control ";
                     $result = mysqli_query($connect, $sql);
                 }
@@ -138,7 +138,7 @@ function rows()
             $check = false;
             if (isset($_POST['start'])) {
 
-                include('db/connect.php');
+                include('connect.php');
                 if (mysqli_num_rows($result) > 0) {
                     $sql = "SELECT  forword , L , R , backword FROM dynamic_control ORDER BY id DESC LIMIT 1";
                     $result = mysqli_query($connect, $sql);
